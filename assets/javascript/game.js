@@ -27,8 +27,6 @@ $(document).ready(function() {
 		$("#pink").attr("crystalValue", pink);
 		$("#wins").text(wins);
 		$("#losses").text(losses);
-        $("#winOrLose").text("");
-        console.log(blue, green, yellow, pink)
 	}
 
 	function youWin() {
