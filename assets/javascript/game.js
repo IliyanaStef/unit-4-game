@@ -29,26 +29,7 @@ $(document).ready(function() {
 		$("#losses").text(losses);
 	}
 
-	function youWin() {
-		$("#result").text("YOU WIN!");
-		wins++;
-		$("#wins").text(wins);
-	}
-
-	function youLose() {
-		$("#result").text("YOU LOSE");
-		losses++;
-		$("#losses").text(losses);
-	}
-
 	newGame();
-
-	$(".crystalimg").hover(function() {
-		$(this).css({opacity: 0.3});
-	},
-	function() {
-		$(this).css({opacity: 1});
-	});
 
 	$(".crystalimg").on("click", function() {
 		if (yourScore >= targetScore) {
@@ -65,7 +46,19 @@ $(document).ready(function() {
 		} else if (yourScore > targetScore) {
 			youLose();
 		}
-	});
+    });
+    
+    function youWin() {
+		$("#result").text("YOU WIN!");
+		wins++;
+		$("#wins").text(wins);
+	}
+
+	function youLose() {
+		$("#result").text("YOU LOSE");
+		losses++;
+		$("#losses").text(losses);
+	}
 
 	$(".btn").on("click", function() {
         $("#result").text("");
