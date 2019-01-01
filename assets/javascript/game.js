@@ -9,11 +9,11 @@ $(document).ready(function() {
 	var pink;
 
 	function newNumbers() {
-		targetScore = Math.floor(Math.random() * 110) + 20;
-		blue = Math.ceil(Math.random() * 12);
-		green = Math.ceil(Math.random() * 12);
-		yellow = Math.ceil(Math.random() * 12);
-		pink = Math.ceil(Math.random() * 12);
+		targetScore = Math.floor(Math.random() * 120) + 1;
+		blue = Math.floor(Math.random() * 12) + 1;
+		green = Math.floor(Math.random() * 12) + 1;
+		yellow = Math.floor(Math.random() * 12) + 1;
+		pink = Math.floor(Math.random() * 12) + 1;
 	}
 
 	function newGame() {
